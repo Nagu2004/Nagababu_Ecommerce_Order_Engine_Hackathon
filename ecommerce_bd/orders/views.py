@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from cart.models import Cart, CartItem
+from cart.models import Cart, Cartitem
 from .models import Order
 import random
 # Create your views here.
