@@ -12,7 +12,7 @@ class place_order(APIView):
         coupon = request.data.get('coupon')
 
         cart = Cart.objects.get(user_id=user)
-        items = CartItem.objects.filter(cart=cart)
+        items = Cartitem.objects.filter(cart=cart)
 
         total = sum(i.product.price * i.quantity for i in items)
 
